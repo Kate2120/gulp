@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4c44cf;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+    h1 {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .list {
+    width: 750px;
+    text-align: center;
+    background-color: #f5c1f0;
+    padding-top: 15px;
+    border: 1px solid #e353da;
+    border-radius: 2px;
+    display: block;
+  }
+  
+  .workSpace {
+    width: 350px;
+    text-align: center;
+    background-color: #f5c1f0;
+    padding-top: 15px;
+    border: 1px solid #e353da;
+    border-radius: 2px;
+    display: block;
+  }
+  
+  .work_space {
+    width: 400px;
+    text-align: center;
+    background-color: #f5c1f0;
+    padding-top: 15px;
+    border: 1px solid #e353da;
+    border-radius: 2px;
+  }
+  
+  .headingH2 {
+    color: #1e8cb0;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    margin: auto;
+    background-color: #e953da;
+    color: white;
+    border-radius: 2px;
+    border: 2px #d453da solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 325px;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    margin: auto;
+    background-color: #e953da;
+    color: white;
+    border-radius: 2px;
+    border: 2px #d453da solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 230px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: start;
+    border: 1px solid #1e8cb0;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .employerStyleNull {
+    width: 0px;
+  }
+  
+  .clientStyle {
+    width: 150px;
+    border: 1px solid #1e8cb0;
+    background-color: #e353da;
+    border-radius: 4px;
+    margin: 10px 5px;
+    color: white;
+  }
+  
+  p {
+    display: block;
+    line-height: 22px;
+    border-bottom: #d453da;
+  }
+  
+  .item_list {
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #fe8cda;
+    padding-left: 10px;
+    display: inline-block;
+    width: 250px;
+    margin-bottom: 5px;
+  
+    .p {
+      width: 50px;
+    }
+  }
+  
+  .buttonNull {
+    width: 0px;
+  }
+  
+  .button, .redact {
+    width: 130px;
+    padding: 3px 5px;
+    background-color: #1e8cb0;
+    border: 1px solid #1e7daa;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+  }
+  
+  select {
+    width: 250px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #fe8cda;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 250px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #fe8cda;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .result {
+    width: 250px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #fe8cda;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding-left: 5px;
+    color: #1e7daa;
+    background-color: white;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    border: 1px solid #e953da;
+  }
+  
+  .checkbox {
+    width: 10px;
+    margin: 10px 10px;
+    border: 1px solid #fe8cda;
+  }
