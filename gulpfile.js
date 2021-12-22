@@ -43,8 +43,8 @@ function browerSync(params){
 
 function html(done){
     src(path.src.html)
-    .pipe(fileinclude())
-    .pipe(dest(path.build.html))
+    .pipe(fileinclude());
+    .pipe(dest(path.build.html));
     .pipe(browsersync.stream());
 
     done();
@@ -56,15 +56,15 @@ function css(done){
         scss({
             outputStyle: "expanded"
         })
-    )
-    .pipe(dest(path.build.css))
-    .pipe(clean_css())
+    );
+    .pipe(dest(path.build.css));
+    .pipe(clean_css());
     .pipe(
         rename({
             extname: ".min.css"
-        })
+        });
     )
-    .pipe(dest(path.build.css))
+    .pipe(dest(path.build.css));
     .pipe(browsersync.stream());
 
     done();
@@ -75,9 +75,9 @@ function js(done){
     .pipe(ts({
         noImplicitAny: true,
         target: "es6",
-    }))
-    .pipe(rename({extname: ".min.js"}))
-    .pipe(dest(path.build.js))
+    }));
+    .pipe(rename({extname: ".min.js"}));
+    .pipe(dest(path.build.js));
     .pipe(browsersync.stream());
 
     done();
