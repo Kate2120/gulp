@@ -10,7 +10,7 @@ let fileinclude = require("gulp-file-include");
 const { timeStamp } = require("console");
 
 let project = "dist";
-let source = "#src";
+let source = "src";
 
 let path = {
     build: {
