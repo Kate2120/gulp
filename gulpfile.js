@@ -21,12 +21,12 @@ let path = {
     src: {
         html: source + "/*.html",
         css: source + "/style/scss/bank_style.scss",
-        ts: source + "/script/bank_main.ts",
+        ts: source + "/script/*.ts",
     },
     watch: {
         html: source + "/",
         css: source + "/style/scss/bank_style.scss",
-        ts: source + "/script/bank_main.ts",
+        ts: source + "/script/*.ts",
     },
     clean: "./" + project + "/"
 };
