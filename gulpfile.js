@@ -10,7 +10,7 @@ let fileinclude = require("gulp-file-include");
 const { timeStamp } = require("console");
 
 let project = "dist";
-let source = "#src";
+let source = "src";
 
 let path = {
     build: {
@@ -20,13 +20,13 @@ let path = {
     },
     src: {
         html: source + "/*.html",
-        css: source + "/style/scss/bank_style.scss",
-        ts: source + "/script/bank_main.ts",
+        css: source + "/style/scss/*.scss",
+        ts: source + "/script/*.ts",
     },
     watch: {
         html: source + "/",
-        css: source + "/style/scss/bank_style.scss",
-        ts: source + "/script/bank_main.ts",
+        css: source + "/style/scss/*.scss",
+        ts: source + "/script/*.ts",
     },
     clean: "./" + project + "/"
 };
@@ -96,13 +96,5 @@ function clean(params){
 }
 
 let build = gulp.series(clean, gulp.parallel(js, css, html));
-let watch = gulp.parallel(build, watchFiles, browerSync);
 
-gulp.task("ts", js);
-
-//exports.ts = ts;
-exports.scss = scss;
-exports.html = html;
-exports.build = build;
-exports.watch = watch;
-exports.default = watch;
+exports.default = gulp.parallel(build, watchFiles, browerSync);
